@@ -37,11 +37,15 @@ pub mod staker;
 pub mod swap_router;
 pub mod utils;
 
+pub mod contract;
+pub mod error;
+pub mod msg;
+
 #[cfg(feature = "extensions")]
 pub mod extensions;
 
-#[cfg(test)]
-mod tests;
+// #[cfg(test)]
+pub mod tests;
 
 pub mod prelude {
     pub use crate::{

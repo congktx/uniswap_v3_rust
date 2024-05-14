@@ -6,6 +6,7 @@ use cw20::Cw20ExecuteMsg;
 
 use crate::error::ContractError;
 use crate::msg::{ExecuteMsg, InstantiateMsg, QueryMsg};
+use crate::tests::{make_pool, DAI, USDC};
 
 /*
 // version info for migration info
@@ -20,6 +21,7 @@ pub fn instantiate(
     _info: MessageInfo,
     _msg: InstantiateMsg,
 ) -> Result<Response, ContractError> {
+    let gg = make_pool(USDC, DAI);
     Ok(Response::default())
 }
 

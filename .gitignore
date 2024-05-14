@@ -16,3 +16,4 @@ Cargo.lock
 # IDEs
 .idea
 .vscode
+node_modules
